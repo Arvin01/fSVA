@@ -7,7 +7,7 @@ In order to load the entire project (data, results and required packages), simpl
     library("ProjectTemplate")
     load.project()
     
-The total loaded workspace is 0.2 GB.
+The total loaded workspace is 0.2 GB. Once you've run these commands, you can re-create the figures and tables by looking at the code in the `graphs` and `reports` directories. If you would like to recreate the results from scratch, read on...
 
 ## Simulations:
 
