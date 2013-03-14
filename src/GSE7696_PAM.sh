@@ -1,0 +1,3 @@
+#!/bin/bash
+
+R CMD BATCH GSE7696_PAM.R

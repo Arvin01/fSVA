@@ -1,0 +1,15 @@
+qsub -cwd sim1.sh
+qsub -cwd sim2.sh
+qsub -cwd sim3.sh
+qsub -cwd sim4.sh
+qsub -cwd sim5.sh
+
+qsub -cwd GSE10927_PAM.sh
+qsub -cwd GSE13041_PAM.sh
+qsub -cwd GSE13911_PAM.sh
+qsub -cwd GSE2034_PAM.sh
+qsub -cwd GSE2603_PAM.sh
+qsub -cwd GSE2990_PAM.sh
+qsub -cwd GSE4183_PAM.sh
+qsub -cwd GSE6764_PAM.sh
+qsub -cwd GSE7696_PAM.sh

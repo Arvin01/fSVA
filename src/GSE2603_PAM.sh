@@ -1,0 +1,3 @@
+#!/bin/bash
+
+R CMD BATCH GSE2603_PAM.R
