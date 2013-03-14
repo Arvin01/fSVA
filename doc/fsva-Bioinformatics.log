@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.15)  13 MAR 2013 20:52
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.15)  13 MAR 2013 21:33
 entering extended mode
 **fsva-Bioinformatics.tex
-(C:\Users\Hilary\Desktop\fSVA\doc\fsva-Bioinformatics.tex
+(C:\Users\Hilary\GitHub\fSVA\doc\fsva-Bioinformatics.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,14 +13,14 @@ an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese,
 romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
 sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
 senglishmax, welsh, loaded.
-(C:\Users\Hilary\Desktop\fSVA\doc\bioinfo.cls
+(C:\Users\Hilary\GitHub\fSVA\doc\bioinfo.cls
 Document Class: bioinfo 2003/02/08 0.1
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 )
-(C:\Users\Hilary\Desktop\fSVA\doc\crop.sty
+(C:\Users\Hilary\GitHub\fSVA\doc\crop.sty
 Package: crop 2001/11/16 v1.6 cropmarks (mf)
 \CROP@width=\dimen102
 \CROP@height=\dimen103
@@ -51,10 +51,10 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 \CROP@offset=\count81
 Package crop Info: Local config file crop.cfg used on input line 344.
 
-(C:\Users\Hilary\Desktop\fSVA\doc\crop.cfg))
+(C:\Users\Hilary\GitHub\fSVA\doc\crop.cfg))
 Package crop Info: using pdf(la)tex graphics driver on input line 33.
 
-(C:\Users\Hilary\Desktop\fSVA\doc\graphicx.sty
+(C:\Users\Hilary\GitHub\fSVA\doc\graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
@@ -122,7 +122,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(C:\Users\Hilary\Desktop\fSVA\doc\array.sty
+(C:\Users\Hilary\GitHub\fSVA\doc\array.sty
 Package: array 1998/05/13 v2.3m Tabular extension package (FMi)
 \col@sep=\dimen115
 \extrarowheight=\dimen116
@@ -130,7 +130,7 @@ Package: array 1998/05/13 v2.3m Tabular extension package (FMi)
 \extratabsurround=\skip44
 \backup@length=\skip45
 )
-(C:\Users\Hilary\Desktop\fSVA\doc\color.sty
+(C:\Users\Hilary\GitHub\fSVA\doc\color.sty
 Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
@@ -148,7 +148,7 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(C:\Users\Hilary\Desktop\fSVA\doc\flushend.sty
+(C:\Users\Hilary\GitHub\fSVA\doc\flushend.sty
 Package: flushend 1997/10/01
 \@aaa=\box28
 \@ccc=\box29
@@ -158,7 +158,7 @@ Package: flushend 1997/10/01
 \@extra@skip=\dimen117
 \@nd@page@rule=\dimen118
 )
-(C:\Users\Hilary\Desktop\fSVA\doc\stfloats.sty
+(C:\Users\Hilary\GitHub\fSVA\doc\stfloats.sty
 Package: stfloats 1999/10/22
 \@dblbotnum=\count94
 \c@dblbotnumber=\count95
@@ -175,12 +175,12 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip48
 \dth@everypar=\toks29
 )
-(C:\Users\Hilary\Desktop\fSVA\doc\chngpage.sty
+(C:\Users\Hilary\GitHub\fSVA\doc\chngpage.sty
 Package: chngpage 2001/01/31 v1.1b change page layout
 \c@cp@cnt=\count96
 \c@cp@tempcnt=\count97
 )
-(C:\Users\Hilary\Desktop\fSVA\doc\times.sty
+(C:\Users\Hilary\GitHub\fSVA\doc\times.sty
 Package: times 2000/01/12 PSNFSS-v8.1 Times font as default roman (SPQR) 
 )
 \c@section=\count98
@@ -199,7 +199,7 @@ Package: times 2000/01/12 PSNFSS-v8.1 Times font as default roman (SPQR)
 \tempdime=\dimen120
 \temptbox=\box32
 
-(C:\Users\Hilary\Desktop\fSVA\doc\natbib.sty
+(C:\Users\Hilary\GitHub\fSVA\doc\natbib.sty
 Package: natbib 2000/07/24 7.0a (PWD)
 \bibhang=\skip54
 \bibsep=\skip55
@@ -245,7 +245,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-(C:\Users\Hilary\Desktop\fSVA\doc\float.sty
+(C:\Users\Hilary\GitHub\fSVA\doc\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count106
 \float@exts=\toks30
@@ -253,11 +253,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks31
 \@floatcapt=\box34
 )
-(C:\Users\Hilary\Desktop\fSVA\doc\url.sty
+(C:\Users\Hilary\GitHub\fSVA\doc\url.sty
 Package: url 1999/03/02  ver 1.4  Verb mode for urls, email addresses, and file
  names
 )
-(C:\Users\Hilary\Desktop\fSVA\doc\fsva-Bioinformatics.aux)
+(C:\Users\Hilary\GitHub\fSVA\doc\fsva-Bioinformatics.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
@@ -380,123 +380,26 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
-
-
-Package natbib Warning: Citation `Eisen1998' on page 1 undefined on input line 
-35.
-
-
-Package natbib Warning: Citation `Chan2011' on page 1 undefined on input line 3
-5.
-
-
-Package natbib Warning: Citation `Scharpf2011' on page 1 undefined on input lin
-e 37.
-
-
-Package natbib Warning: Citation `Johnson2007b' on page 1 undefined on input li
-ne 37.
-
-
-Package natbib Warning: Citation `Walker2008' on page 1 undefined on input line
- 37.
-
-
-Package natbib Warning: Citation `Lander1999' on page 1 undefined on input line
- 37.
-
-
-Package natbib Warning: Citation `Fare2003' on page 1 undefined on input line 3
-7.
-
-
-Package natbib Warning: Citation `Baggerly2004a' on page 1 undefined on input l
-ine 39.
-
-
-Package natbib Warning: Citation `Baggerly2005' on page 1 undefined on input li
-ne 39.
-
-
-Package natbib Warning: Citation `Spielman2007' on page 1 undefined on input li
-ne 39.
-
-
-Package natbib Warning: Citation `Akey2007' on page 1 undefined on input line 3
-9.
-
-
-Package natbib Warning: Citation `Sebastiani2010' on page 1 undefined on input 
-line 39.
-
-
-Package natbib Warning: Citation `Lambert2012' on page 1 undefined on input lin
-e 39.
-
-
-Package natbib Warning: Citation `Leek2010' on page 1 undefined on input line 3
-9.
-
-
-Package natbib Warning: Citation `Parker2012' on page 1 undefined on input line
- 39.
-
-
-Package natbib Warning: Citation `Luo2010' on page 1 undefined on input line 39
-.
-
-
-Package natbib Warning: Citation `Micheel2012' on page 1 undefined on input lin
-e 39.
-
-
-Package natbib Warning: Citation `Johnson2007b' on page 1 undefined on input li
-ne 41.
-
-
-Package natbib Warning: Citation `Gagnon-Bartsch2011' on page 1 undefined on in
-put line 41.
-
-
-Package natbib Warning: Citation `Leek2007' on page 1 undefined on input line 4
-1.
-
-
-Package natbib Warning: Citation `Leek2010' on page 1 undefined on input line 4
-1.
-
-
-Package natbib Warning: Citation `Walker2008' on page 1 undefined on input line
- 41.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 52.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 48.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsphv.fd"
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
  [1
 
 {C:/Users/Hilary/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-
-Package natbib Warning: Citation `Leek2007' on page 2 undefined on input line 5
-3.
-
-
-Package natbib Warning: Citation `Leek2008' on page 2 undefined on input line 5
-3.
-
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 
 Underfull \hbox (badness 1048) in paragraph at lines 53--54
 \OT1/ptm/m/n/9 expres-sion levels and the outcome of inte-rest $[][]\OML/ztmcm/
@@ -505,67 +408,14 @@ ztmcm/m/it/9 b[] \OT1/ztmcm/m/n/9 +$
  []
 
 
-Package natbib Warning: Citation `Johnson2007b' on page 2 undefined on input li
-ne 60.
-
-
-Package natbib Warning: Citation `Leek2007' on page 2 undefined on input line 6
-0.
-
-
-Package natbib Warning: Citation `Leek2008' on page 2 undefined on input line 6
-0.
-
-
-Package natbib Warning: Citation `Walker2008' on page 2 undefined on input line
- 60.
-
-
-Package natbib Warning: Citation `Friguet2009' on page 2 undefined on input lin
-e 60.
-
-
-Package natbib Warning: Citation `Leek2010' on page 2 undefined on input line 6
-0.
-
-
-Package natbib Warning: Citation `Gagnon-Bartsch2011' on page 2 undefined on in
-put line 60.
-
-
-Package natbib Warning: Citation `Leek2008' on page 2 undefined on input line 6
-7.
-
-
-Package natbib Warning: Citation `Leek2008' on page 2 undefined on input line 6
-7.
-
-
-Package natbib Warning: Citation `Leek2008' on page 2 undefined on input line 7
-1.
-
-
-Package natbib Warning: Citation `Efron2004b' on page 2 undefined on input line
- 71.
-
-
-Package natbib Warning: Citation `Storey2005' on page 2 undefined on input line
- 71.
-
-
-Package natbib Warning: Citation `Buja1992' on page 2 undefined on input line 7
-7.
-
-
-Package natbib Warning: Citation `Leek2011' on page 2 undefined on input line 7
-7.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <8> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 94.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 93.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <8> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 94.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 93.
 
 Overfull \hbox (261.0pt too wide) has occurred while \output is active
 [][][][] 
@@ -580,26 +430,24 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
  []
 
 [2]
-
-Package natbib Warning: Citation `Warmuth2007' on page 3 undefined on input lin
-e 94.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package natbib Warning: Citation `Warmuth2008' on page 3 undefined on input lin
-e 94.
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][][][] 
+ []
 
 
-Package natbib Warning: Citation `Tibshirani2002' on page 3 undefined on input 
-line 156.
+Overfull \vbox (1.0pt too high) has occurred while \output is active []
 
-
-<C:/Users/Hilary/Desktop/fSVA/graphs/simfigpaper.pdf, id=22, 680.5425pt x 1517.
-67pt>
-File: C:/Users/Hilary/Desktop/fSVA/graphs/simfigpaper.pdf Graphic file (type pd
-f)
- <use C:/Users/Hilary/Desktop/fSVA/graphs/simfigpaper.pdf>
-Package pdftex.def Info: C:/Users/Hilary/Desktop/fSVA/graphs/simfigpaper.pdf us
-ed on input line 164.
+ [3]
+<C:/Users/Hilary/GitHub/fSVA/graphs/simfigpaper.pdf, id=25, 680.5425pt x 1517.6
+7pt>
+File: C:/Users/Hilary/GitHub/fSVA/graphs/simfigpaper.pdf Graphic file (type pdf
+)
+ <use C:/Users/Hilary/GitHub/fSVA/graphs/simfigpaper.pdf>
+Package pdftex.def Info: C:/Users/Hilary/GitHub/fSVA/graphs/simfigpaper.pdf use
+d on input line 164.
 (pdftex.def)             Requested size: 243.54955pt x 543.14186pt.
 
 Overfull \hbox (0.54955pt too wide) in paragraph at lines 164--166
@@ -617,31 +465,16 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 
 Overfull \vbox (1.0pt too high) has occurred while \output is active []
 
- [3]
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[4 <C:/Users/Hilary/GitHub/fSVA/graphs/simfigpaper.pdf>]
+(C:\Users\Hilary\GitHub\fSVA\doc\fsva-Bioinformatics.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-
-Package natbib Warning: Citation `Parker2012' on page 4 undefined on input line
- 172.
-
-
-Package natbib Warning: Citation `Edgar2002' on page 4 undefined on input line 
-177.
-
-
-Package natbib Warning: Citation `Leek2010' on page 4 undefined on input line 2
-11.
-
-
-Package natbib Warning: Citation `Parker2012' on page 4 undefined on input line
- 211.
-
-
-Package natbib Warning: Citation `Micheel2012' on page 4 undefined on input lin
-e 211.
-
-
 Overfull \hbox (261.0pt too wide) has occurred while \output is active
 [][][][] 
  []
@@ -649,32 +482,59 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 
 Overfull \vbox (1.0pt too high) has occurred while \output is active []
 
+ [5])
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
-[][][][] 
- []
 
-[4 <C:/Users/Hilary/Desktop/fSVA/graphs/simfigpaper.pdf>]
+Overfull \vbox (3.74228pt too high) has occurred while \output is active []
 
-Package natbib Warning: Citation `Leek2012b' on page 5 undefined on input line 
-215.
+Extra height:20.0pt when 15.25772pt
 
-No file fsva-Bioinformatics.bbl.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \vbox (0.78178pt too high) has occurred while \output is active []
 
-Extra height:0.0pt when 196.73021pt
+Overfull \vbox (2.74228pt too high) has occurred while \output is active []
 
-Overfull \vbox (0.78178pt too high) has occurred while \output is active []
+Extra height:20.0pt when 16.25772pt
 
-(2)Left:196.73021pt Right:175.94843pt Output:196.73021pt
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (1.74228pt too high) has occurred while \output is active []
+
+Extra height:20.0pt when 17.25772pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (0.74228pt too high) has occurred while \output is active []
+
+Extra height:20.0pt when 18.25772pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 19.25772pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 20.25772pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:20.25772pt Right:20.0pt Output:20.25772pt
 - LAST -
 Extra skip:0.0pt
-Left:196.73021pt
-Right:175.94843pt
-Output:196.73021pt
+Left:20.25772pt
+Right:20.0pt
+Output:20.25772pt
 
-Overfull \vbox (0.78178pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (261.0pt too wide) has occurred while \output is active
@@ -684,41 +544,39 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 
 Overfull \vbox (1.0pt too high) has occurred while \output is active []
 
- [5
 
-]
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][][][] 
+ []
 
-Package natbib Warning: There were undefined citations.
+[6
 
-(C:\Users\Hilary\Desktop\fSVA\doc\fsva-Bioinformatics.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (C:\Users\Hilary\GitHub\fSVA\doc\fsva-Bioinformatics.aux) ) 
 Here is how much of TeX's memory you used:
- 3239 strings out of 494045
- 40567 string characters out of 3148384
- 107272 words of memory out of 3000000
- 6419 multiletter control sequences out of 15000+200000
- 87362 words of font info for 185 fonts, out of 3000000 for 9000
+ 3243 strings out of 494045
+ 40658 string characters out of 3148384
+ 112465 words of memory out of 3000000
+ 6420 multiletter control sequences out of 15000+200000
+ 88976 words of font info for 187 fonts, out of 3000000 for 9000
  719 hyphenation exceptions out of 8191
- 37i,27n,26p,1029b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/couri
-er/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/Hilary/AppData/Roaming/MiKTeX/
-2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/Hilary/AppData/Roaming/MiKTeX/2.9
-/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
-imes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on fsva-Bioinformatics.pdf (5 pages, 180742 bytes).
+ 37i,27n,26p,1029b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/
+MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/he
+lvetic/uhvro8a.pfb><C:/Users/Hilary/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/
+symbol/usyr.pfb><C:/Users/Hilary/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/sym
+bol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on fsva-Bioinformatics.pdf (6 pages, 190984 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

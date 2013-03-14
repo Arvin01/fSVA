@@ -1,0 +1,207 @@
+\begin{thebibliography}{}
+
+\bibitem[Akey {\em et~al.}(2007)Akey, Biswas, Leek, and Storey]{Akey2007}
+Akey, J.~M., Biswas, S., Leek, J.~T., and Storey, J.~D. (2007).
+\newblock {On the design and analysis of gene expression studies in human
+  populations.}
+\newblock {\em Nature Genetics\/}, {\bf 39}(7), 807--8; author reply 808--9.
+
+\bibitem[Baggerly {\em et~al.}(2004)Baggerly, Morris, and
+  Coombes]{Baggerly2004a}
+Baggerly, K.~a., Morris, J.~S., and Coombes, K.~R. (2004).
+\newblock {Reproducibility of SELDI-TOF protein patterns in serum: comparing
+  datasets from different experiments.}
+\newblock {\em Bioinformatics (Oxford, England)\/}, {\bf 20}(5), 777--85.
+
+\bibitem[Baggerly {\em et~al.}(2005)Baggerly, Coombes, and
+  Morris]{Baggerly2005}
+Baggerly, K.~a., Coombes, K.~R., and Morris, J.~S. (2005).
+\newblock {Bias, randomization, and ovarian proteomic data: a reply to
+  "producers and consumers"}.
+\newblock {\em Cancer informatics\/}, {\bf 1}(2003), 9--14.
+
+\bibitem[Buja and Eyuboglu(1992)Buja and Eyuboglu]{Buja1992}
+Buja, A. and Eyuboglu, N. (1992).
+\newblock {Remarks on Parallel Analysis}.
+\newblock {\em Multivariate Behavioral Research\/}, {\bf 27}(4), 509--540.
+
+\bibitem[Chan and Ginsburg(2011)Chan and Ginsburg]{Chan2011}
+Chan, I.~S. and Ginsburg, G.~S. (2011).
+\newblock {Personalized medicine: progress and promise.}
+\newblock {\em Annual review of genomics and human genetics\/}, {\bf 12},
+  217--44.
+
+\bibitem[Edgar {\em et~al.}(2002)Edgar, Domrachev, and Lash]{Edgar2002}
+Edgar, R., Domrachev, M., and Lash, A.~E. (2002).
+\newblock {Gene Expression Omnibus: NCBI gene expression and hybridization
+  array data repository}.
+\newblock {\em Nucleic Acids Research\/}, {\bf 30}(1), 207--10.
+
+\bibitem[Efron(2004)Efron]{Efron2004b}
+Efron, B. (2004).
+\newblock {Large-Scale Simultaneous Hypothesis Testing}.
+\newblock {\em Journal of the American Statistical Association\/}, {\bf
+  99}(465), 96--104.
+
+\bibitem[Eisen {\em et~al.}(1998)Eisen, Spellman, Brown, and
+  Botstein]{Eisen1998}
+Eisen, M.~B., Spellman, P.~T., Brown, P.~O., and Botstein, D. (1998).
+\newblock {Cluster analysis and display of genome-wide expression patterns}.
+\newblock {\em Proceedings of the National Academy of Sciences\/}, {\bf
+  95}(25), 14863--8.
+
+\bibitem[Fare {\em et~al.}(2003)Fare, Coffey, Dai, He, Kessler, Kilian, Koch,
+  LeProust, Marton, Meyer, Stoughton, Tokiwa, and Wang]{Fare2003}
+Fare, T.~L., Coffey, E.~M., Dai, H., He, Y.~D., Kessler, D.~a., Kilian, K.~a.,
+  Koch, J.~E., LeProust, E., Marton, M.~J., Meyer, M.~R., Stoughton, R.~B.,
+  Tokiwa, G.~Y., and Wang, Y. (2003).
+\newblock {Effects of atmospheric ozone on microarray data quality.}
+\newblock {\em Analytical chemistry\/}, {\bf 75}(17), 4672--5.
+
+\bibitem[Friguet {\em et~al.}(2009)Friguet, Kloareg, and Causeur]{Friguet2009}
+Friguet, C., Kloareg, M., and Causeur, D. (2009).
+\newblock {A Factor Model Approach to Multiple Testing Under Dependence}.
+\newblock {\em Journal of the American Statistical Association\/}, {\bf
+  104}(488), 1406--1415.
+
+\bibitem[Gagnon-Bartsch and Speed(2012)Gagnon-Bartsch and
+  Speed]{Gagnon-Bartsch2011}
+Gagnon-Bartsch, J.~A. and Speed, T.~P. (2012).
+\newblock {Using control genes to correct for unwanted variation in microarray
+  data}.
+\newblock {\em Biostatistics\/}, {\bf 13}(3), 539----552.
+
+\bibitem[Johnson {\em et~al.}(2007)Johnson, Li, and Rabinovic]{Johnson2007b}
+Johnson, W.~E., Li, C., and Rabinovic, A. (2007).
+\newblock {Adjusting batch effects in microarray expression data using
+  empirical Bayes methods.}
+\newblock {\em Biostatistics\/}, {\bf 8}(1), 118--27.
+
+\bibitem[Lambert and Black(2012)Lambert and Black]{Lambert2012}
+Lambert, C.~G. and Black, L.~J. (2012).
+\newblock {Learning from our GWAS mistakes: from experimental design to
+  scientific method.}
+\newblock {\em Biostatistics (Oxford, England)\/}, {\bf 13}(2), 195--203.
+
+\bibitem[Lander(1999)Lander]{Lander1999}
+Lander, E.~S. (1999).
+\newblock {Array of hope.}
+\newblock {\em Nature genetics\/}, {\bf 21}(1 Suppl), 3--4.
+
+\bibitem[Leek(2011)Leek]{Leek2011}
+Leek, J.~T. (2011).
+\newblock {Asymptotic conditional singular value decomposition for
+  high-dimensional genomic data.}
+\newblock {\em Biometrics\/}, {\bf 67}(2), 344--52.
+
+\bibitem[Leek and Storey(2007)Leek and Storey]{Leek2007}
+Leek, J.~T. and Storey, J.~D. (2007).
+\newblock {Capturing heterogeneity in gene expression studies by surrogate
+  variable analysis.}
+\newblock {\em PLoS Genetics\/}, {\bf 3}(9), 1724--35.
+
+\bibitem[Leek and Storey(2008)Leek and Storey]{Leek2008}
+Leek, J.~T. and Storey, J.~D. (2008).
+\newblock {A general framework for multiple testing dependence}.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America\/}, {\bf 105}(48), 18718--23.
+
+\bibitem[Leek {\em et~al.}(2010)Leek, Scharpf, Bravo, Simcha, Langmead,
+  Johnson, Geman, Baggerly, and Irizarry]{Leek2010}
+Leek, J.~T., Scharpf, R.~B., Bravo, H.~C., Simcha, D., Langmead, B., Johnson,
+  W.~E., Geman, D., Baggerly, K.~A., and Irizarry, R.~A. (2010).
+\newblock {Tackling the widespread and critical impact of batch effects in
+  high-throughput data.}
+\newblock {\em Nature Reviews Genetics\/}, {\bf 11}(10), 733--9.
+
+\bibitem[Leek {\em et~al.}(2012)Leek, Johnson, Parker, Jaffe, and
+  Storey]{Leek2012b}
+Leek, J.~T., Johnson, W.~E., Parker, H.~S., Jaffe, A.~E., and Storey, J.~D.
+  (2012).
+\newblock {The sva package for removing batch effects and other unwanted
+  variation in high-throughput experiments}.
+\newblock {\em Bioinformatics\/}, {\bf 28}(6), 882----883.
+
+\bibitem[Luo {\em et~al.}(2010)Luo, Schumacher, Scherer, Sanoudou, Megherbi,
+  Davison, Shi, Tong, Shi, Hong, Zhao, Elloumi, Shi, Thomas, Lin, Tillinghast,
+  Liu, Zhou, Herman, Li, Deng, Fang, Bushel, Woods, and Zhang]{Luo2010}
+Luo, J., Schumacher, M., Scherer, A., Sanoudou, D., Megherbi, D., Davison, T.,
+  Shi, T., Tong, W., Shi, L., Hong, H., Zhao, C., Elloumi, F., Shi, W., Thomas,
+  R., Lin, S., Tillinghast, G., Liu, G., Zhou, Y., Herman, D., Li, Y., Deng,
+  Y., Fang, H., Bushel, P., Woods, M., and Zhang, J. (2010).
+\newblock {A comparison of batch effect removal methods for enhancement of
+  prediction performance using MAQC-II microarray gene expression data}.
+\newblock {\em The Pharmacogenomics Journal\/}, {\bf 10}(4), 278--91.
+
+\bibitem[Micheel {\em et~al.}(2012)Micheel, Nass, and Omenn]{Micheel2012}
+Micheel, C.~M., Nass, S.~J., and Omenn, G.~S. (2012).
+\newblock {\em {Evolution of Translational Omics: Lessons Learned and the Path
+  Forward}\/}.
+\newblock The National Academies Press.
+
+\bibitem[Parker and Leek(2012)Parker and Leek]{Parker2012}
+Parker, H.~S. and Leek, J.~T. (2012).
+\newblock {The practical effect of batch on genomic prediction}.
+\newblock {\em Statistical Applications in Genetics and Molecular Biology\/},
+  {\bf 11}(3).
+
+\bibitem[Scharpf {\em et~al.}(2011)Scharpf, Ruczinski, Carvalho, Doan,
+  Chakravarti, and Irizarry]{Scharpf2011}
+Scharpf, R.~B., Ruczinski, I., Carvalho, B., Doan, B., Chakravarti, A., and
+  Irizarry, R.~a. (2011).
+\newblock {A multilevel model to address batch effects in copy number
+  estimation using SNP arrays.}
+\newblock {\em Biostatistics (Oxford, England)\/}, {\bf 12}(1), 33--50.
+
+\bibitem[Sebastiani {\em et~al.}(2010)Sebastiani, Solovieff, Puca, Hartley,
+  Melista, Dworkis, Wilk, Myers, Steinberg, Baldwin, and Perls]{Sebastiani2010}
+Sebastiani, P., Solovieff, N., Puca, A., Hartley, S.~W., Melista, E., Dworkis,
+  D.~A., Wilk, J.~B., Myers, R.~H., Steinberg, M.~H., Baldwin, C.~T., and
+  Perls, T.~T. (2010).
+\newblock {Genetic Signatures of Exceptional Longevity in Humans}.
+\newblock {\em Science\/}, {\bf 10}, 1126.
+
+\bibitem[Spielman {\em et~al.}(2007)Spielman, Bastone, Burdick, Morley, Ewens,
+  and Cheung]{Spielman2007}
+Spielman, R.~S., Bastone, L.~a., Burdick, J.~T., Morley, M., Ewens, W.~J., and
+  Cheung, V.~G. (2007).
+\newblock {Common genetic variants account for differences in gene expression
+  among ethnic groups.}
+\newblock {\em Nature genetics\/}, {\bf 39}(2), 226--31.
+
+\bibitem[Storey {\em et~al.}(2005)Storey, Akey, and Kruglyak]{Storey2005}
+Storey, J.~D., Akey, J.~M., and Kruglyak, L. (2005).
+\newblock {Multiple locus linkage analysis of genomewide expression in yeast.}
+\newblock {\em PLoS biology\/}, {\bf 3}(8), e267.
+
+\bibitem[Tibshirani {\em et~al.}(2002)Tibshirani, Hastie, Narasimhan, and
+  Chu]{Tibshirani2002}
+Tibshirani, R., Hastie, T., Narasimhan, B., and Chu, G. (2002).
+\newblock {Diagnosis of multiple cancer types by shrunken centroids of gene
+  expression}.
+\newblock {\em Proceedings of the National Academy of Sciences\/}, {\bf
+  99}(10), 6567--72.
+
+\bibitem[Walker {\em et~al.}(2008)Walker, Liao, Gilbert, Wong, Pollard,
+  McCulloch, Lit, and Sharp]{Walker2008}
+Walker, W.~L., Liao, I.~H., Gilbert, D.~L., Wong, B., Pollard, K.~S.,
+  McCulloch, C.~E., Lit, L., and Sharp, F.~R. (2008).
+\newblock {Empirical Bayes accomodation of batch-effects in microarray data
+  using identical replicate reference samples: application to RNA expression
+  profiling of blood from Duchenne muscular dystrophy patients.}
+\newblock {\em BMC genomics\/}, {\bf 9}, 494.
+
+\bibitem[Warmuth and Kuzmin(2007)Warmuth and Kuzmin]{Warmuth2007}
+Warmuth, M.~K. and Kuzmin, D. (2007).
+\newblock {Randomized PCA Algorithms with Regret Bounds that are Logarithmic in
+  the Dimension}.
+\newblock {\em Advances in Neural Information Processing Systems\/}, {\bf 19},
+  1481.
+
+\bibitem[Warmuth and Kuzmin(2008)Warmuth and Kuzmin]{Warmuth2008}
+Warmuth, M.~K. and Kuzmin, D. (2008).
+\newblock {Randomized Online PCA Algorithms with Regret Bounds that are
+  Logarithmic in the Dimension}.
+\newblock {\bf 9}, 2287--2320.
+
+\end{thebibliography}
