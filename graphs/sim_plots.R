@@ -52,6 +52,14 @@ dev.off()
 
 
 ## create panel figure for paper ##
+## on a PC, so need to change working directories ##
+workdir<-"C:/Users/Hilary/GitHub/fsva"
+
+setwd(workdir)
+library(ProjectTemplate)
+load.project()
+setwd("C:/Users/Hilary/GitHub/fsva/doc")
+
 pdf(file="simfigpaper.pdf",height=21,width=9.43)
 par(mfrow=c(3,1),mar=c(5.1,6,4.1,2.1))
 sim_fig_paper(res5,maintitle="Scenario 1")
