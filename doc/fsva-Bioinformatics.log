@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.15)  15 MAR 2013 17:21
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.15)  19 MAR 2013 13:16
 entering extended mode
 **fsva-Bioinformatics.tex
 (C:\Users\Hilary\GitHub\fSVA\doc\fsva-Bioinformatics.tex
@@ -472,6 +472,9 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (261.0pt too wide) has occurred while \output is active
 [][][][] 
  []
@@ -482,54 +485,24 @@ Overfull \vbox (1.0pt too high) has occurred while \output is active []
  [5])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Overfull \vbox (3.74228pt too high) has occurred while \output is active []
-
-Extra height:20.0pt when 15.25772pt
+Extra height:10.0pt when 73.75772pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Overfull \vbox (2.74228pt too high) has occurred while \output is active []
-
-Extra height:20.0pt when 16.25772pt
+Extra height:10.0pt when 74.75772pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Overfull \vbox (1.74228pt too high) has occurred while \output is active []
-
-Extra height:20.0pt when 17.25772pt
+Extra height:0.0pt when 75.75772pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Overfull \vbox (0.74228pt too high) has occurred while \output is active []
-
-Extra height:20.0pt when 18.25772pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 19.25772pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 20.25772pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:20.25772pt Right:20.0pt Output:20.25772pt
+(2)Left:75.75772pt Right:75.51544pt Output:75.75772pt
 - LAST -
 Extra skip:0.0pt
-Left:20.25772pt
-Right:20.0pt
-Output:20.25772pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Left:75.75772pt
+Right:75.51544pt
+Output:75.75772pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -552,11 +525,11 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 Here is how much of TeX's memory you used:
  3242 strings out of 494045
  40483 string characters out of 3148384
- 112465 words of memory out of 3000000
+ 111465 words of memory out of 3000000
  6420 multiletter control sequences out of 15000+200000
  88976 words of font info for 187 fonts, out of 3000000 for 9000
  719 hyphenation exceptions out of 8191
- 37i,27n,26p,1029b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,27n,26p,1029b,467s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/
 MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
@@ -571,7 +544,7 @@ symbol/usyr.pfb><C:/Users/Hilary/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/sym
 bol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on fsva-Bioinformatics.pdf (6 pages, 187950 bytes).
+Output written on fsva-Bioinformatics.pdf (6 pages, 191744 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
