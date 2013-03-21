@@ -15,7 +15,6 @@ Next, run these lines (with your own working directories!) to make sure that the
 
 ```
 library(knitr)
-options(digits=2)
 opts_knit$set(root.dir="C:/Users/Hilary/GitHub/fSVA",base.dir="C:/Users/Hilary/GitHub/fSVA/doc")
 knit("test.Rnw")
 ```
