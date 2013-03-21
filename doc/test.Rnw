@@ -208,21 +208,31 @@ Each of the studies was randomly divided into equally-sized ``database'' and ``n
 Results from this process can be found below (Table \ref{studytab}).  Five of the studies showed significant improvement using fSVA.  One study showed marginal improvement, with its 95\% confidence interval overlapped zero.  Three studies showed a cost to using fSVA, though in all three cases the 95\% confidence interval for the true cost overlapped zero.
 
 <<gettabrows, eval=TRUE, include=FALSE, cache=FALSE>>=
+
 createtab<-function(res){
 	tmp1<-mean(res$none.out)
-	tmp2<-mean(res$none.out)-1.96*sd(res$none.out)/sqrt(100)
-	tmp3<-mean(res$none.out)+1.96*sd(res$none.out)/sqrt(100)
+	tmp2<-mean(res$none.out)-1.96*sd(res$none.out)/sqrt(length(res$none.out))
+	tmp3<-mean(res$none.out)+1.96*sd(res$none.out)/sqrt(length(res$none.out))
 	
 	tmp4<-mean(res$exact.out)
-	tmp5<-mean(res$exact.out)-1.96*sd(res$exact.out)/sqrt(100)
-	tmp6<-mean(res$exact.out)+1.96*sd(res$exact.out)/sqrt(100)
+	tmp5<-mean(res$exact.out)-1.96*sd(res$exact.out)/sqrt(length(res$exact.out))
+	tmp6<-mean(res$exact.out)+1.96*sd(res$exact.out)/sqrt(length(res$exact.out))
 	
 	diffen<-res$exact.out-res$none.out
 	tmp7<-mean(diffen)
-	tmp8<-mean(diffen)-1.96*sd(diffen)/sqrt(100)
-	tmp9<-mean(diffen)+1.96*sd(diffen)/sqrt(100)
+	tmp8<-mean(diffen)-1.96*sd(diffen)/sqrt(length(diffen))
+	tmp9<-mean(diffen)+1.96*sd(diffen)/sqrt(length(diffen))
 	
-	tabvals<-c(tmp1,tmp2,tmp3,tmp4,tmp5,tmp6,tmp7,tmp8,tmp9)
+	tabvals<-c(round(tmp1,2),
+			   round(tmp2,2),
+			   round(tmp3,2),
+			   round(tmp4,2),
+			   round(tmp5,2),
+			   round(tmp6,2),
+			   round(tmp7,2),
+			   round(tmp8,2),
+			   round(tmp9,2))
+	gsub("-0.00","0.00",tabvals)
 	return(tabvals)
 }
 
@@ -238,8 +248,6 @@ row9<-createtab(GSE7696_PAM)
 @
 
 
-% latex table generated in R 2.15.0 by xtable 1.7-0 package
-% Tue May 22 14:34:28 2012
 \begin{table}
 \begin{center}
 \begin{tabular}{ccc}
@@ -247,26 +255,44 @@ row9<-createtab(GSE7696_PAM)
   \hline
 Study & No Correction &  Improvement with fSVA \\
   \hline
-GSE10927 & \textbf{\Sexpr{row1[1]}} (\Sexpr{row1[2]}, \Sexpr{row1[3]}) 
-		 & \textbf{\Sexpr{row1[7]}} (\Sexpr{row1[8]}, \Sexpr{row1[9]}) \\
-GSE13041 & \textbf{\Sexpr{row2[1]}} (\Sexpr{row2[2]}, \Sexpr{row2[3]}) 
-		 & \textbf{\Sexpr{row2[7]}} (\Sexpr{row2[8]}, \Sexpr{row2[9]}) \\
-GSE13911 & \textbf{\Sexpr{row3[1]}} (\Sexpr{row3[2]}, \Sexpr{row3[3]}) 
-		 & \textbf{\Sexpr{row3[7]}} (\Sexpr{row3[8]}, \Sexpr{row3[9]}) \\
-GSE2034 & \textbf{\Sexpr{row4[1]}} (\Sexpr{row4[2]}, \Sexpr{row4[3]}) 
-		& \textbf{\Sexpr{row4[7]}} (\Sexpr{row4[8]}, \Sexpr{row4[9]}) \\
-GSE2603  & \textbf{\Sexpr{row5[1]}} (\Sexpr{row5[2]}, \Sexpr{row5[3]}) 
-		 & \textbf{\Sexpr{row5[7]}} (\Sexpr{row5[8]}, \Sexpr{row5[9]}) \\
-GSE2990  & \textbf{\Sexpr{row6[1]}} (\Sexpr{row6[2]}, \Sexpr{row6[3]}) 
-		 & \textbf{\Sexpr{row6[7]}} (\Sexpr{row6[8]}, \Sexpr{row6[9]}) \\
-GSE4183  & \textbf{\Sexpr{row7[1]}} (\Sexpr{row7[2]}, \Sexpr{row7[3]}) 
-		 & \textbf{\Sexpr{row7[7]}} (\Sexpr{row7[8]}, \Sexpr{row7[9]}) \\
-GSE6764  & \textbf{\Sexpr{row8[1]}} (\Sexpr{row8[2]}, \Sexpr{row8[3]}) 
-		 & \textbf{\Sexpr{row8[7]}} (\Sexpr{row8[8]}, \Sexpr{row8[9]}) \\
-GSE7696  & \textbf{\Sexpr{row9[1]}} (\Sexpr{row9[2]}, \Sexpr{row9[3]}) 
-		 & \textbf{\Sexpr{row9[7]}} (\Sexpr{row9[8]}, \Sexpr{row9[9]}) \\
-   \hline
-   & \\
+GSE10927 & \textbf{\Sexpr{sprintf("%.2f",row1[1])}}
+				  (\Sexpr{sprintf("%.2f",row1[2])}, \Sexpr{sprintf("%.2f",row1[3])}) 
+		 & \textbf{\Sexpr{sprintf("%.2f",row1[7])}}
+				  (\Sexpr{sprintf("%.2f",row1[8])}, \Sexpr{sprintf("%.2f",row1[9])})  \\
+GSE13041 & \textbf{\Sexpr{sprintf("%.2f",row2[1])}}
+				  (\Sexpr{sprintf("%.2f",row2[2])}, \Sexpr{sprintf("%.2f",row2[3])}) 
+		 & \textbf{\Sexpr{sprintf("%.2f",row2[7])}}
+				  (\Sexpr{sprintf("%.2f",row2[8])}, \Sexpr{sprintf("%.2f",row2[9])})  \\
+GSE13911 & \textbf{\Sexpr{sprintf("%.2f",row3[1])}}
+				  (\Sexpr{sprintf("%.2f",row3[2])}, \Sexpr{sprintf("%.2f",row3[3])}) 
+		 & \textbf{\Sexpr{sprintf("%.2f",row3[7])}}
+				  (\Sexpr{sprintf("%.2f",row3[8])}, \Sexpr{sprintf("%.2f",row3[9])})  \\
+GSE2034  & \textbf{\Sexpr{sprintf("%.2f",row4[1])}}
+				  (\Sexpr{sprintf("%.2f",row4[2])}, \Sexpr{sprintf("%.2f",row4[3])}) 
+		 & \textbf{\Sexpr{sprintf("%.2f",row4[7])}}
+				  (\Sexpr{sprintf("%.2f",row4[8])}, \Sexpr{sprintf("%.2f",row4[9])})  \\
+GSE2603  & \textbf{\Sexpr{sprintf("%.2f",row5[1])}}
+				  (\Sexpr{sprintf("%.2f",row5[2])}, \Sexpr{sprintf("%.2f",row5[3])}) 
+		 & \textbf{\Sexpr{sprintf("%.2f",row5[7])}}
+				  (\Sexpr{sprintf("%.2f",row5[8])}, \Sexpr{sprintf("%.2f",row5[9])})  \\
+GSE2990  & \textbf{\Sexpr{sprintf("%.2f",row6[1])}}
+				  (\Sexpr{sprintf("%.2f",row6[2])}, \Sexpr{sprintf("%.2f",row6[3])}) 
+		 & \textbf{\Sexpr{sprintf("%.2f",row6[7])}}
+				  (\Sexpr{sprintf("%.2f",row6[8])}, \Sexpr{sprintf("%.2f",row6[9])})  \\
+GSE4183  & \textbf{\Sexpr{sprintf("%.2f",row7[1])}}
+				  (\Sexpr{sprintf("%.2f",row7[2])}, \Sexpr{sprintf("%.2f",row7[3])}) 
+		 & \textbf{\Sexpr{sprintf("%.2f",row7[7])}}
+				  (\Sexpr{sprintf("%.2f",row7[8])}, \Sexpr{sprintf("%.2f",row7[9])})  \\
+GSE6764  & \textbf{\Sexpr{sprintf("%.2f",row8[1])}}
+				  (\Sexpr{sprintf("%.2f",row8[2])}, \Sexpr{sprintf("%.2f",row8[3])}) 
+		 & \textbf{\Sexpr{sprintf("%.2f",row8[7])}}
+				  (\Sexpr{sprintf("%.2f",row8[8])}, \Sexpr{sprintf("%.2f",row8[9])})  \\
+GSE7696  & \textbf{\Sexpr{sprintf("%.2f",row9[1])}}
+				  (\Sexpr{sprintf("%.2f",row9[2])}, \Sexpr{sprintf("%.2f",row9[3])}) 
+		 & \textbf{\Sexpr{sprintf("%.2f",row9[7])}}
+				  (\Sexpr{sprintf("%.2f",row9[8])}, \Sexpr{sprintf("%.2f",row9[9])})  \\
+\hline
+ & \\
 \end{tabular}
 \caption{\textbf{fSVA improves prediction accuracy in 5 of the 9 studies examined.} The remaining 4 studies showed indeterminate results since the 95\% confidence intervals overlapped zero.  In order to find the prediction accuracy results, each of the studies was randomly divided into ``database samples'' and ``new samples''.  Exact fSVA-correction was then performed as described above.  We then built a predictive model (PAM) on the database and tested the prediction accuracy on the new samples.}
 \end{center}
@@ -287,9 +313,7 @@ This work is partially supported by NIH R01 GM083084 and GM103552, and H.P. was 
 
 %% BibTeX 
 
-
 \bibliographystyle{natbib}
 \bibliography{fSVA}
-
 
 \end{document}
