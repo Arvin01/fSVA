@@ -12,7 +12,7 @@ First, go to the `config` directory and change these settings in the global.dcf 
 
 Next, run these lines (with your own working directories!) to make sure that the knitted version compiles correctly.
     library(knitr)
-	options(digits=2)
+    options(digits=2)
     opts_knit$set(root.dir="C:/Users/Hilary/GitHub/fSVA",base.dir="C:/Users/Hilary/GitHub/fSVA/doc")
     knit("test.Rnw")
 
