@@ -1,10 +1,6 @@
 \documentclass{bioinfo}
 
-\usepackage{pdfsync}
-\usepackage{graphics}
 \usepackage{mathptmx}  
-\usepackage{float}
-\usepackage{graphicx}
 \usepackage{natbib}
 \usepackage{amsmath}
 \usepackage[hidelinks=true]{hyperref}
@@ -21,8 +17,8 @@
 $^{2}$Center for Bioinformatics and Computational Biology, Department of Computer Science, University of Maryland, College Park, Maryland, 20742}
 
 \history{Received on XXXXX; revised on XXXXX; accepted on XXXXX}
-
 \editor{Associate Editor: XXXXXXX}
+
 
 \maketitle
 
@@ -176,7 +172,7 @@ We found that in general the prediction accuracy measures for different iteratio
 
 
 <<createsimfig, eval=TRUE, include=FALSE, cache=FALSE>>=
-pdf(file="doc/testsimfigpaper.pdf",height=21,width=9.43)
+pdf(file="doc/simfigpaper.pdf",height=21,width=9.43)
 par(mfrow=c(3,1),mar=c(5.1,6,4.1,2.1))
 sim_fig_paper(res5,maintitle="Scenario 1")
 sim_fig_paper(res4,maintitle="Scenario 2")
@@ -188,7 +184,7 @@ dev.off()
 
 \begin{figure}
 \centering
-\includegraphics[width=3.37in]{testsimfigpaper.pdf}
+\includegraphics[width=3.37in]{simfigpaper.pdf}
 \caption{\textbf{fSVA improves prediction accuracy of simulated datasets.} We created simulated datasets (consisting of a database and new samples) using model \ref{full_expression_matrix} and tested the prediction accuracy of these using \texttt{R}.  For each simulated data set we performed either exact fSVA correction, fast fSVA correction, SVA correction on the database only, or no correction. We performed 100 iterations on each simulation scenario described in table \ref{simtab}.  These plots show the 100 iterations, as well as the average trend line for each of the four methods investigated.
 }
 \label{simres}
@@ -223,16 +219,15 @@ createtab<-function(res){
 	tmp8<-mean(diffen)-1.96*sd(diffen)/sqrt(length(diffen))
 	tmp9<-mean(diffen)+1.96*sd(diffen)/sqrt(length(diffen))
 	
-	tabvals<-c(round(tmp1,2),
-			   round(tmp2,2),
-			   round(tmp3,2),
-			   round(tmp4,2),
-			   round(tmp5,2),
-			   round(tmp6,2),
-			   round(tmp7,2),
-			   round(tmp8,2),
-			   round(tmp9,2))
-	gsub("-0.00","0.00",tabvals)
+	tabvals<-c(tmp1,
+			   tmp2,
+			   tmp3,
+			   tmp4,
+			   tmp5,
+			   tmp6,
+			   tmp7,
+			   tmp8,
+			   tmp9)
 	return(tabvals)
 }
 
@@ -245,6 +240,14 @@ row6<-createtab(GSE2990_PAM)
 row7<-createtab(GSE4183_PAM)
 row8<-createtab(GSE6764_PAM)
 row9<-createtab(GSE7696_PAM)
+
+# for use in \Sexpr in table to avoid -0.00 occurrences #
+f <- function(..., dig=2) {
+  g <- sprintf(paste0("%.", dig, "f"), ...)
+  z <- paste0("0.", paste(rep("0", dig), collapse=""))
+  g[g==paste0("-",z)] <- z
+  g
+}
 @
 
 
@@ -255,42 +258,42 @@ row9<-createtab(GSE7696_PAM)
   \hline
 Study & No Correction &  Improvement with fSVA \\
   \hline
-GSE10927 & \textbf{\Sexpr{sprintf("%.2f",row1[1])}}
-				  (\Sexpr{sprintf("%.2f",row1[2])}, \Sexpr{sprintf("%.2f",row1[3])}) 
-		 & \textbf{\Sexpr{sprintf("%.2f",row1[7])}}
-				  (\Sexpr{sprintf("%.2f",row1[8])}, \Sexpr{sprintf("%.2f",row1[9])})  \\
-GSE13041 & \textbf{\Sexpr{sprintf("%.2f",row2[1])}}
-				  (\Sexpr{sprintf("%.2f",row2[2])}, \Sexpr{sprintf("%.2f",row2[3])}) 
-		 & \textbf{\Sexpr{sprintf("%.2f",row2[7])}}
-				  (\Sexpr{sprintf("%.2f",row2[8])}, \Sexpr{sprintf("%.2f",row2[9])})  \\
-GSE13911 & \textbf{\Sexpr{sprintf("%.2f",row3[1])}}
-				  (\Sexpr{sprintf("%.2f",row3[2])}, \Sexpr{sprintf("%.2f",row3[3])}) 
-		 & \textbf{\Sexpr{sprintf("%.2f",row3[7])}}
-				  (\Sexpr{sprintf("%.2f",row3[8])}, \Sexpr{sprintf("%.2f",row3[9])})  \\
-GSE2034  & \textbf{\Sexpr{sprintf("%.2f",row4[1])}}
-				  (\Sexpr{sprintf("%.2f",row4[2])}, \Sexpr{sprintf("%.2f",row4[3])}) 
-		 & \textbf{\Sexpr{sprintf("%.2f",row4[7])}}
-				  (\Sexpr{sprintf("%.2f",row4[8])}, \Sexpr{sprintf("%.2f",row4[9])})  \\
-GSE2603  & \textbf{\Sexpr{sprintf("%.2f",row5[1])}}
-				  (\Sexpr{sprintf("%.2f",row5[2])}, \Sexpr{sprintf("%.2f",row5[3])}) 
-		 & \textbf{\Sexpr{sprintf("%.2f",row5[7])}}
-				  (\Sexpr{sprintf("%.2f",row5[8])}, \Sexpr{sprintf("%.2f",row5[9])})  \\
-GSE2990  & \textbf{\Sexpr{sprintf("%.2f",row6[1])}}
-				  (\Sexpr{sprintf("%.2f",row6[2])}, \Sexpr{sprintf("%.2f",row6[3])}) 
-		 & \textbf{\Sexpr{sprintf("%.2f",row6[7])}}
-				  (\Sexpr{sprintf("%.2f",row6[8])}, \Sexpr{sprintf("%.2f",row6[9])})  \\
-GSE4183  & \textbf{\Sexpr{sprintf("%.2f",row7[1])}}
-				  (\Sexpr{sprintf("%.2f",row7[2])}, \Sexpr{sprintf("%.2f",row7[3])}) 
-		 & \textbf{\Sexpr{sprintf("%.2f",row7[7])}}
-				  (\Sexpr{sprintf("%.2f",row7[8])}, \Sexpr{sprintf("%.2f",row7[9])})  \\
-GSE6764  & \textbf{\Sexpr{sprintf("%.2f",row8[1])}}
-				  (\Sexpr{sprintf("%.2f",row8[2])}, \Sexpr{sprintf("%.2f",row8[3])}) 
-		 & \textbf{\Sexpr{sprintf("%.2f",row8[7])}}
-				  (\Sexpr{sprintf("%.2f",row8[8])}, \Sexpr{sprintf("%.2f",row8[9])})  \\
-GSE7696  & \textbf{\Sexpr{sprintf("%.2f",row9[1])}}
-				  (\Sexpr{sprintf("%.2f",row9[2])}, \Sexpr{sprintf("%.2f",row9[3])}) 
-		 & \textbf{\Sexpr{sprintf("%.2f",row9[7])}}
-				  (\Sexpr{sprintf("%.2f",row9[8])}, \Sexpr{sprintf("%.2f",row9[9])})  \\
+GSE10927 & \textbf{\Sexpr{f(row1[1])}}
+				  (\Sexpr{f(row1[2])}, \Sexpr{f(row1[3])}) 
+		 & \textbf{\Sexpr{f(row1[7])}}
+				  (\Sexpr{f(row1[8])}, \Sexpr{f(row1[9])})  \\
+GSE13041 & \textbf{\Sexpr{f(row2[1])}}
+				  (\Sexpr{f(row2[2])}, \Sexpr{f(row2[3])}) 
+		 & \textbf{\Sexpr{f(row2[7])}}
+				  (\Sexpr{f(row2[8])}, \Sexpr{f(row2[9])})  \\
+GSE13911 & \textbf{\Sexpr{f(row3[1])}}
+				  (\Sexpr{f(row3[2])}, \Sexpr{f(row3[3])}) 
+		 & \textbf{\Sexpr{f(row3[7])}}
+				  (\Sexpr{f(row3[8])}, \Sexpr{f(row3[9])})  \\
+GSE2034  & \textbf{\Sexpr{f(row4[1])}}
+				  (\Sexpr{f(row4[2])}, \Sexpr{f(row4[3])}) 
+		 & \textbf{\Sexpr{f(row4[7])}}
+				  (\Sexpr{f(row4[8])}, \Sexpr{f(row4[9])})  \\
+GSE2603  & \textbf{\Sexpr{f(row5[1])}}
+				  (\Sexpr{f(row5[2])}, \Sexpr{f(row5[3])}) 
+		 & \textbf{\Sexpr{f(row5[7])}}
+				  (\Sexpr{f(row5[8])}, \Sexpr{f(row5[9])})  \\
+GSE2990  & \textbf{\Sexpr{f(row6[1])}}
+				  (\Sexpr{f(row6[2])}, \Sexpr{f(row6[3])}) 
+		 & \textbf{\Sexpr{f(row6[7])}}
+				  (\Sexpr{f(row6[8])}, \Sexpr{f(row6[9])})  \\
+GSE4183  & \textbf{\Sexpr{f(row7[1])}}
+				  (\Sexpr{f(row7[2])}, \Sexpr{f(row7[3])}) 
+		 & \textbf{\Sexpr{f(row7[7])}}
+				  (\Sexpr{f(row7[8])}, \Sexpr{f(row7[9])})  \\
+GSE6764  & \textbf{\Sexpr{f(row8[1])}}
+				  (\Sexpr{f(row8[2])}, \Sexpr{f(row8[3])}) 
+		 & \textbf{\Sexpr{f(row8[7])}}
+				  (\Sexpr{f(row8[8])}, \Sexpr{f(row8[9])})  \\
+GSE7696  & \textbf{\Sexpr{f(row9[1])}}
+				  (\Sexpr{f(row9[2])}, \Sexpr{f(row9[3])}) 
+		 & \textbf{\Sexpr{f(row9[7])}}
+				  (\Sexpr{f(row9[8])}, \Sexpr{f(row9[9])})  \\
 \hline
  & \\
 \end{tabular}

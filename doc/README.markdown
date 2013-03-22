@@ -16,6 +16,6 @@ Next, run these lines (with your own working directories!) to make sure that the
 ```
 library(knitr)
 opts_knit$set(root.dir="C:/Users/Hilary/GitHub/fSVA",base.dir="C:/Users/Hilary/GitHub/fSVA/doc")
-knit("test.Rnw")
+knit("fsva-Bioinformatics.Rnw")
 ```
 Running this code will create the file `test.tex`, which you can then compile using your latex editor.
