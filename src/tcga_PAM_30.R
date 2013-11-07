@@ -1,5 +1,5 @@
 ## CHANGE TO YOUR WORKING DIRECTORY!! ##
-workdir <- "C:/Users/Hilary/GitHub/fSVA/"
+workdir <- "/home/bst/student/hiparker/fSVA"
 
 setwd(workdir)
 library(ProjectTemplate)
@@ -119,9 +119,9 @@ for(s in 1:n.it){
 				   test.dat=fast.fsva.res$new, test.grp=newsamp.out)
 }
 
-tcga_PAM<-list(fast.out = fast.out,
+tcga_PAM_30<-list(fast.out = fast.out,
                exact.out = exact.out,
 			   none.out = none.out,
 			   simsize = simsize,
 			   n.it = n.it)
-ProjectTemplate::cache("tcga_PAM")
+ProjectTemplate::cache("tcga_PAM_30")

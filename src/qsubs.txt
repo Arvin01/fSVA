@@ -13,3 +13,11 @@ qsub -cwd GSE2990_PAM.sh
 qsub -cwd GSE4183_PAM.sh
 qsub -cwd GSE6764_PAM.sh
 qsub -cwd GSE7696_PAM.sh
+
+qsub -cwd tcga_PAM_20.sh
+qsub -cwd tcga_PAM_21.sh
+qsub -cwd tcga_PAM_22.sh
+qsub -cwd tcga_PAM_24.sh
+qsub -cwd tcga_PAM_25.sh
+qsub -cwd tcga_PAM_27.sh
+qsub -cwd tcga_PAM_30.sh

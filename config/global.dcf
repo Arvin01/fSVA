@@ -1,8 +1,8 @@
-data_loading: off
+data_loading: on
 cache_loading: on
 munging: off
 logging: off
 load_libraries: on
-libraries: sva, limma, pamr, xtable, RColorBrewer, ClassDiscovery, affy, frma, genefilter, hgu133plus2.db, simpleaffy, hgu133plus2frmavecs, devtools, broman
+libraries: sva, limma, pamr, xtable, RColorBrewer, affy, frma, genefilter, hgu133plus2.db, simpleaffy, hgu133plus2frmavecs, devtools, broman
 as_factors: on
 data_tables: off
