@@ -15,7 +15,10 @@ Next, run these lines (with your own working directories!) to make sure that the
 
 ```
 library(knitr)
-opts_knit$set(root.dir="C:/Users/Hilary/GitHub/fSVA",base.dir="C:/Users/Hilary/GitHub/fSVA/doc")
-knit("fsva-Bioinformatics.Rnw")
+opts_knit$set(
+  root.dir="/Users/hparker/Desktop/fSVA",
+  base.dir="/Users/hparker/Desktop/fSVA/doc"
+)
+knit("fsva.Rnw")
 ```
-Running this code will create the file `test.tex`, which you can then compile using your latex editor.
+Running this code will create the file `fsva.tex`, which you can then compile using your latex editor.

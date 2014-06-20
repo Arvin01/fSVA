@@ -1,99 +1,51 @@
-\documentclass{bioinfo}\usepackage{graphicx, color}
-%% maxwidth is the original width if it is less than linewidth
-%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
-\makeatletter
-\def\maxwidth{ %
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
-
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-\definecolor{fgcolor}{rgb}{0.2, 0.2, 0.2}
-\newcommand{\hlnumber}[1]{\textcolor[rgb]{0,0,0}{#1}}%
-\newcommand{\hlfunctioncall}[1]{\textcolor[rgb]{0.501960784313725,0,0.329411764705882}{\textbf{#1}}}%
-\newcommand{\hlstring}[1]{\textcolor[rgb]{0.6,0.6,1}{#1}}%
-\newcommand{\hlkeyword}[1]{\textcolor[rgb]{0,0,0}{\textbf{#1}}}%
-\newcommand{\hlargument}[1]{\textcolor[rgb]{0.690196078431373,0.250980392156863,0.0196078431372549}{#1}}%
-\newcommand{\hlcomment}[1]{\textcolor[rgb]{0.180392156862745,0.6,0.341176470588235}{#1}}%
-\newcommand{\hlroxygencomment}[1]{\textcolor[rgb]{0.43921568627451,0.47843137254902,0.701960784313725}{#1}}%
-\newcommand{\hlformalargs}[1]{\textcolor[rgb]{0.690196078431373,0.250980392156863,0.0196078431372549}{#1}}%
-\newcommand{\hleqformalargs}[1]{\textcolor[rgb]{0.690196078431373,0.250980392156863,0.0196078431372549}{#1}}%
-\newcommand{\hlassignement}[1]{\textcolor[rgb]{0,0,0}{\textbf{#1}}}%
-\newcommand{\hlpackage}[1]{\textcolor[rgb]{0.588235294117647,0.709803921568627,0.145098039215686}{#1}}%
-\newcommand{\hlslot}[1]{\textit{#1}}%
-\newcommand{\hlsymbol}[1]{\textcolor[rgb]{0,0,0}{#1}}%
-\newcommand{\hlprompt}[1]{\textcolor[rgb]{0.2,0.2,0.2}{#1}}%
-
-\usepackage{framed}
-\makeatletter
-\newenvironment{kframe}{%
- \def\at@end@of@kframe{}%
- \ifinner\ifhmode%
-  \def\at@end@of@kframe{\end{minipage}}%
-  \begin{minipage}{\columnwidth}%
- \fi\fi%
- \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
- \colorbox{shadecolor}{##1}\hskip-\fboxsep
-     % There is no \\@totalrightmargin, so:
-     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
- \MakeFramed {\advance\hsize-\width
-   \@totalleftmargin\z@ \linewidth\hsize
-   \@setminipage}}%
- {\par\unskip\endMakeFramed%
- \at@end@of@kframe}
-\makeatother
-
-\definecolor{shadecolor}{rgb}{.97, .97, .97}
-\definecolor{messagecolor}{rgb}{0, 0, 0}
-\definecolor{warningcolor}{rgb}{1, 0, 1}
-\definecolor{errorcolor}{rgb}{1, 0, 0}
-\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+\documentclass[letterpaper,12pt]{article}  
 
 \usepackage{alltt}
-
 \usepackage{mathptmx}  
 \usepackage{natbib}
 \usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{url}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\usepackage{setspace}
 \usepackage[hidelinks=true]{hyperref}
 \newcommand{\p}{{\rm Pr}}
-\copyrightyear{xxxx}
-\pubyear{xxxx}
+
+\title{Removing batch effects for prediction problems with frozen surrogate variable analysis}
+\author[1]{Hilary S. Parker}
+\author[2]{H\'{e}ctor Corrada Bravo}
+\author[1]{Jeffrey T. Leek\thanks{jleek@jhsph.edu}}
+\affil[1]{Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, 21205}
+\affil[2]{Center for Bioinformatics and Computational Biology, Department of Computer Science, University of Maryland, College Park, Maryland, 20742}
+
+\renewcommand\Authands{ and }
+
+
 
 \begin{document}
-\firstpage{1}
-
-\title[Frozen Surrogate Variable Analysis]{Removing batch effects for prediction problems with frozen surrogate variable analysis}
-\author[Parker \textit{et~al}]{Hilary S. Parker\,$^{1}$, H\'{e}ctor Corrada Bravo\,$^{2}$ and Jeffrey T. Leek\,$^1$\footnote{to whom correspondence should be addressed}}
-\address{$^{1}$Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, 21205\\
-$^{2}$Center for Bioinformatics and Computational Biology, Department of Computer Science, University of Maryland, College Park, Maryland, 20742}
-
-\history{Received on XXXXX; revised on XXXXX; accepted on XXXXX}
-\editor{Associate Editor: XXXXXXX}
 
 
 \maketitle
 
+
 \begin{abstract}
-
-\section{Motivation:}
-Batch effects are responsible for the failure of promising genomic prognostic signatures, major ambiguities in published genomic results, and retractions of widely-publicized findings. Batch effect corrections have been developed to remove these artifacts, but they are designed to be used in population studies. But genomic technologies are beginning to be used in clinical applications where samples are analyzed one at a time for diagnostic, prognostic, and predictive applications. There are currently no batch correction methods that have been developed specifically for prediction. In this paper, we propose an new method called frozen surrogate variable analysis (fSVA) that borrows strength from a training set for individual sample batch correction.
-
-\section{Results:}
-We show that fSVA improves prediction accuracy in simulations and in public genomic studies. The magnitude of the improvement varies with the correlation between batch and outcome in the training set.
-
-\section{Availability:}
-fSVA is available in the R statistical programming language as part of the \href{http://www.bioconductor.org/packages/2.11/bioc/html/sva.html}{\texttt{sva} Bioconductor package}.
-
-\section{Contact:} \href{jleek@jhsph.edu}{jleek@jhsph.edu}
-%{genomics; prediction; batch effects; personalized medicine; surrogate variable analysis}
+{Batch effects are responsible for the failure of promising genomic prognostic signatures, major ambiguities in published genomic results, and retractions of widely-publicized findings. Batch effect corrections have been developed to remove these artifacts, but they are designed to be used in population studies. But genomic technologies are beginning to be used in clinical applications where samples are analyzed one at a time for diagnostic, prognostic, and predictive applications. There are currently no batch correction methods that have been developed specifically for prediction. In this paper, we propose an new method called frozen surrogate variable analysis (fSVA) that borrows strength from a training set for individual sample batch correction. We show that fSVA improves prediction accuracy in simulations and in public genomic studies.  fSVA is available as part of the \texttt{sva} {\it Bioconductor} package.}
+{genomics; prediction; batch effects; personalized medicine; surrogate variable analysis}
 \end{abstract}
 
 
+\doublespacing
 
+
+<<setup, eval=TRUE, include=FALSE, cache=FALSE>>=
+options(digits=3)
+library(ProjectTemplate)
+load.project()
+@
 
 \section{Introduction}
 Genomic technologies were originally developed and applied for basic science research and hypothesis generation \citep{Eisen1998}. As these technologies mature, they are increasingly being used as clinical tools for diagnosis or prognosis \citep{Chan2011}. The high-dimensional measurements made by microarrays can be used to classify patients into predictive, prognostic, or diagnostic groups. Despite the incredible clinical promise of these technologies there have only been a few signatures that have successfully been translated into the clinic.
@@ -223,8 +175,14 @@ We found that in general the prediction accuracy measures for different iteratio
 
 
 
-
-
+<<createsimfig, eval=TRUE, include=FALSE, cache=FALSE>>=
+pdf(file="doc/simfigpaper.pdf",height=21,width=9.43)
+par(mfrow=c(3,1),mar=c(5.1,6,4.1,2.1))
+sim_fig_paper(res5,maintitle="Scenario 1")
+sim_fig_paper(res4,maintitle="Scenario 2")
+sim_fig_paper(res2,maintitle="Scenario 3")
+dev.off()
+@
 
 
 
@@ -249,8 +207,52 @@ Each of the studies was randomly divided into equally-sized ``database'' and ``n
 
 Results from this process can be found below (Table \ref{studytab}).  Five of the studies showed significant improvement using fSVA.  One study showed marginal improvement, with its 95\% confidence interval overlapped zero.  Three studies showed a cost to using fSVA, though in all three cases the 95\% confidence interval for the true cost overlapped zero.
 
+<<gettabrows, eval=TRUE, include=FALSE, cache=FALSE>>=
 
+createtab<-function(res){
+	tmp1<-mean(res$none.out)
+	tmp2<-mean(res$none.out)-1.96*sd(res$none.out)/sqrt(length(res$none.out))
+	tmp3<-mean(res$none.out)+1.96*sd(res$none.out)/sqrt(length(res$none.out))
+	
+	tmp4<-mean(res$exact.out)
+	tmp5<-mean(res$exact.out)-1.96*sd(res$exact.out)/sqrt(length(res$exact.out))
+	tmp6<-mean(res$exact.out)+1.96*sd(res$exact.out)/sqrt(length(res$exact.out))
+	
+	diffen<-res$exact.out-res$none.out
+	tmp7<-mean(diffen)
+	tmp8<-mean(diffen)-1.96*sd(diffen)/sqrt(length(diffen))
+	tmp9<-mean(diffen)+1.96*sd(diffen)/sqrt(length(diffen))
+	
+	tabvals<-c(tmp1,
+			   tmp2,
+			   tmp3,
+			   tmp4,
+			   tmp5,
+			   tmp6,
+			   tmp7,
+			   tmp8,
+			   tmp9)
+	return(tabvals)
+}
 
+row1<-createtab(GSE10927_PAM)
+row2<-createtab(GSE13041_PAM)
+row3<-createtab(GSE13911_PAM)
+row4<-createtab(GSE2034_PAM)
+row5<-createtab(GSE2603_PAM)
+row6<-createtab(GSE2990_PAM)
+row7<-createtab(GSE4183_PAM)
+row8<-createtab(GSE6764_PAM)
+row9<-createtab(GSE7696_PAM)
+
+# for use in \Sexpr in table to avoid -0.00 occurrences #
+f <- function(..., dig=2) {
+  g <- sprintf(paste0("%.", dig, "f"), ...)
+  z <- paste0("0.", paste(rep("0", dig), collapse=""))
+  g[g==paste0("-",z)] <- z
+  g
+}
+@
 
 
 \begin{table}
@@ -260,42 +262,42 @@ Results from this process can be found below (Table \ref{studytab}).  Five of th
   \hline
 Study & No Correction &  Improvement with fSVA \\
   \hline
-GSE10927 & \textbf{0.97}
-				  (0.96, 0.97) 
-		 & \textbf{0.02}
-				  (0.01, 0.02)  \\
-GSE13041 & \textbf{0.61}
-				  (0.59, 0.63) 
-		 & \textbf{0.07}
-				  (0.05, 0.10)  \\
-GSE13911 & \textbf{0.93}
-				  (0.93, 0.94) 
-		 & \textbf{0.01}
-				  (0.00, 0.01)  \\
-GSE2034  & \textbf{0.51}
-				  (0.49, 0.52) 
-		 & \textbf{0.03}
-				  (0.01, 0.05)  \\
-GSE2603  & \textbf{0.68}
-				  (0.66, 0.70) 
-		 & \textbf{-0.02}
-				  (-0.04, 0.00)  \\
-GSE2990  & \textbf{0.59}
-				  (0.58, 0.61) 
-		 & \textbf{-0.02}
-				  (-0.04, 0.00)  \\
-GSE4183  & \textbf{0.89}
-				  (0.88, 0.91) 
-		 & \textbf{-0.02}
-				  (-0.03, 0.00)  \\
-GSE6764  & \textbf{0.74}
-				  (0.72, 0.76) 
-		 & \textbf{0.01}
-				  (-0.01, 0.03)  \\
-GSE7696  & \textbf{0.78}
-				  (0.76, 0.79) 
-		 & \textbf{0.02}
-				  (0.01, 0.04)  \\
+GSE10927 & \textbf{\Sexpr{f(row1[1])}}
+				  (\Sexpr{f(row1[2])}, \Sexpr{f(row1[3])}) 
+		 & \textbf{\Sexpr{f(row1[7])}}
+				  (\Sexpr{f(row1[8])}, \Sexpr{f(row1[9])})  \\
+GSE13041 & \textbf{\Sexpr{f(row2[1])}}
+				  (\Sexpr{f(row2[2])}, \Sexpr{f(row2[3])}) 
+		 & \textbf{\Sexpr{f(row2[7])}}
+				  (\Sexpr{f(row2[8])}, \Sexpr{f(row2[9])})  \\
+GSE13911 & \textbf{\Sexpr{f(row3[1])}}
+				  (\Sexpr{f(row3[2])}, \Sexpr{f(row3[3])}) 
+		 & \textbf{\Sexpr{f(row3[7])}}
+				  (\Sexpr{f(row3[8])}, \Sexpr{f(row3[9])})  \\
+GSE2034  & \textbf{\Sexpr{f(row4[1])}}
+				  (\Sexpr{f(row4[2])}, \Sexpr{f(row4[3])}) 
+		 & \textbf{\Sexpr{f(row4[7])}}
+				  (\Sexpr{f(row4[8])}, \Sexpr{f(row4[9])})  \\
+GSE2603  & \textbf{\Sexpr{f(row5[1])}}
+				  (\Sexpr{f(row5[2])}, \Sexpr{f(row5[3])}) 
+		 & \textbf{\Sexpr{f(row5[7])}}
+				  (\Sexpr{f(row5[8])}, \Sexpr{f(row5[9])})  \\
+GSE2990  & \textbf{\Sexpr{f(row6[1])}}
+				  (\Sexpr{f(row6[2])}, \Sexpr{f(row6[3])}) 
+		 & \textbf{\Sexpr{f(row6[7])}}
+				  (\Sexpr{f(row6[8])}, \Sexpr{f(row6[9])})  \\
+GSE4183  & \textbf{\Sexpr{f(row7[1])}}
+				  (\Sexpr{f(row7[2])}, \Sexpr{f(row7[3])}) 
+		 & \textbf{\Sexpr{f(row7[7])}}
+				  (\Sexpr{f(row7[8])}, \Sexpr{f(row7[9])})  \\
+GSE6764  & \textbf{\Sexpr{f(row8[1])}}
+				  (\Sexpr{f(row8[2])}, \Sexpr{f(row8[3])}) 
+		 & \textbf{\Sexpr{f(row8[7])}}
+				  (\Sexpr{f(row8[8])}, \Sexpr{f(row8[9])})  \\
+GSE7696  & \textbf{\Sexpr{f(row9[1])}}
+				  (\Sexpr{f(row9[2])}, \Sexpr{f(row9[3])}) 
+		 & \textbf{\Sexpr{f(row9[7])}}
+				  (\Sexpr{f(row9[8])}, \Sexpr{f(row9[9])})  \\
 \hline
  & \\
 \end{tabular}
